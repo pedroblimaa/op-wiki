@@ -1,0 +1,37 @@
+.SandwichButton {
+  height: 17px;
+  width: 19px;
+  position: relative;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  margin: 10px;
+  transition: all 0.3s ease-in-out;
+}
+
+.SandwichButton:hover {
+  transform: translate(0, -2px);
+}
+
+.SandwichButton span {
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background-color: #fff;
+  transition: all 0.3s ease;
+}
+
+.SandwichButton span:first-child {
+  top: 0;
+}
+
+.SandwichButton span:nth-child(2) {
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.SandwichButton span:last-child {
+  bottom: 0;
+}

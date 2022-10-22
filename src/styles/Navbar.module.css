@@ -1,0 +1,30 @@
+.Navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 1rem;
+    background-color: #333;
+    color: #fff;
+    height: 36px; 
+    border: 1px solid #333;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.Navbar img {
+    height: 40px;
+    width: 40px;
+}
+
+.TitleContainer h1 {
+    font-size: 1.2rem;
+    margin: 0;
+    margin-left: 5px;
+}
+
+.TitleContainer {
+    display: flex;
+    align-items: center;
+}

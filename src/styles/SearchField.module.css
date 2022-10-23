@@ -1,0 +1,20 @@
+.InputContainer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.Input {
+    width: 80%;
+    height: 35px;
+    border: 1px solid var(--background-dark);
+    border-radius: 5px;
+    padding: 0 10px;
+    font-size: 16px;
+    outline: none;
+    background-color: var(--color-light-dark);
+    color: #fff;
+    font-weight: 400px;
+}

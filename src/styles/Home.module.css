@@ -1,0 +1,23 @@
+.Home {
+    margin-left: 10px;
+    margin-right: 10px;
+   
+}
+
+.Home .Title {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.Home .Description {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+
+.Home img {
+    max-width: 100%;
+    border-radius: 5px;
+}

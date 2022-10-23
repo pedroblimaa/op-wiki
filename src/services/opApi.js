@@ -1,8 +1,18 @@
 
-const getOnePieceCharacters = async () => {
-    const response = await fetch('https://onepiece.fandom.com/wiki/Devil_Fruit');
-    
-    return response.data;
+import firebaseApi from "../config/firebaseConfig";
+
+const getCharacters = async () => {
+    const characters = await getAll('characters')
+
+    return characters
 }
 
-export default getOnePieceCharacters;
+const getAll = async (collectionName) => {
+    const collection = await firebaseApi.get(collectionName)
+
+    return collection
+}
+
+const opApi = { getCharacters }
+
+export default opApi;

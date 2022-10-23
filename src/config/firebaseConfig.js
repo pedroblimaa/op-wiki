@@ -18,7 +18,7 @@ const db = firebaseApp.firestore();
 const addJsonArray = async (collectionName, jsonArray) => {
     try{
         jsonArray.forEach(item => {
-            firebaseApi.db.collection(collectionName).add(item)
+            db.collection(collectionName).add(item)
         })
     } catch (error) {
         console.log(error);
@@ -28,6 +28,7 @@ const addJsonArray = async (collectionName, jsonArray) => {
 const deleteAll = async (collectionName) => {
     try {
         const collectionRef = db.collection(collectionName);
+        console.log(collectionRef)
         const querySnapshot = await collectionRef.get();
         const batch = db.batch();
 
@@ -35,13 +36,15 @@ const deleteAll = async (collectionName) => {
             batch.delete(doc.ref);
         });
         await batch.commit();
+
+        console.log('Deleted all documents in collection: ', collectionName);
     } catch (error) {
         console.log(error)
     }
 }
 
 const get = async (collectionName) => {
-    const collection = await firebaseApi.db.collection(collectionName).get()
+    const collection = await db.collection(collectionName).get()
     const docs = []
 
     collection.docs.forEach(doc => {

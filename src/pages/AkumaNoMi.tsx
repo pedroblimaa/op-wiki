@@ -47,7 +47,7 @@ export default function AkumaNoMi() {
     }
 
     return (
-        <div>
+        <div className='page'>
             <h1 className='page-title'>Akuma No Mi</h1>
             <SearchField onChange={searchAkumaNoMi} />
             <ItemList items={filteredAkumaNoMi} isLoading={isLoading} />

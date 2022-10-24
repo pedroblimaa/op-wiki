@@ -5,11 +5,14 @@
 
 .item-list {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    list-style: none;
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
     margin: 0;
-    padding: 0.5rem;
+    padding: .5rem;
+    margin-top: 10px;
+    background-color: var(--color-light-dark);
+    border-radius: 5px;
 }
+
 
 .item-list .item {
     margin: 0.5rem;
@@ -31,6 +34,24 @@
     margin-left: auto;
     margin-right: auto;
     border-radius: 5px;
+
+}
+
+@media screen and (min-width: 800px) {
+
+    .item-list{
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    }
+
+    .item-list .item {
+        width: 150px;
+        height: 150px;
+    }
+
+    .item-list .item img {
+        width: 135px;
+        height: 135px;
+    }
 }
 
 .loading {

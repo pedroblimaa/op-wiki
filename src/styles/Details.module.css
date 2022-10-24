@@ -27,3 +27,15 @@
     margin: 0 10px;
     white-space: pre-wrap;
 }
+
+@media screen and (min-width: 800px) {
+    .Content {
+        flex-direction: row;
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+
+    .Content img {
+        margin-right: 20px;
+    }
+}

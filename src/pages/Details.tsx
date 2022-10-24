@@ -8,7 +8,7 @@ export default function Details() {
     const item: any = location.state.item
 
     return (
-        <div>
+        <div className='page'>
             <h1 className={styles.Title}>{item.name}</h1>
             <div className={styles.Content}>
                 <img src={item.img} alt={item.name} />

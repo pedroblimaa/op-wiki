@@ -1,5 +1,10 @@
 .NavbarContainer {
     height: 54px;
+    background-color: var(--color-light-dark);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
 }
 
 .Navbar {
@@ -7,14 +12,17 @@
     justify-content: space-between;
     align-items: center;
     padding: 0.5rem 1rem;
-    background-color: #333;
+    background-color: var(--color-light-dark);
     color: #fff;
     height: 36px;
-    border: 1px solid #333;
+    border: 1px solid var(--color-light-dark);;
     position: fixed;
     top: 0;
     right: 0;
     left: 0;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .Navbar img { 
@@ -40,6 +48,7 @@
     left: 0;
     bottom: 0;
     width: 80%;
+    max-width: 400px;
     background-color: var(--background-dark);
     border-right: 1px solid var(--color-light-dark);
     border-top: 1px solid var(--color-light-dark);

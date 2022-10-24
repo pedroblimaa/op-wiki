@@ -47,10 +47,10 @@ export default function Characters() {
     }
 
     return (
-        <div>
+        <div className='page'>
             <h1 className='page-title'>Characters</h1>
             <SearchField onChange={searchCharacters} />
-            <ItemList items={filteredCharacters} isLoading={isLoading}/>
+            <ItemList items={filteredCharacters} isLoading={isLoading} />
         </div>
     )
 }

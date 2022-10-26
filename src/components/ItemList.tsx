@@ -7,7 +7,7 @@ export default function ItemList({ items, isLoading }: any) {
         <ul className='item-list'>
             {
                 items.map((item: any) => (
-                    <Link to='/description' key={item.name} state={{ item: item }}>
+                    <Link to='/details' key={item.name} state={{ item: item }}>
                         <li className='item'>
                             <img className={isLoading ? 'loading' : ''}src={item.img} alt={item.name} />
                             <h3>{item.name}</h3>

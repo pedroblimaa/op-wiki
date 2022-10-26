@@ -1,0 +1,16 @@
+.crew-card {
+    transition: all 0.3s ease-in-out;
+}
+
+.card-child {
+    transition: all 0.3s ease-in-out;
+}
+
+.crew-card:hover {
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+    border-color: #555;
+}
+
+.crew-card:hover .card-child {
+    background-color: #555;
+}

@@ -1,10 +1,10 @@
-import { useState, useEffect } from 'react'
+import { useState, useEffect } from "react"
 
-import opApi from '../services/opApi'
-import placeholderImg from '../assets/luffy.jpg'
-import ItemList from '../components/ItemList'
-import SearchField from '../components/SearchField'
 import '../styles/List.css'
+import opApi from "../services/opApi"
+import ItemList from "./ItemList"
+import SearchField from "./SearchField"
+import PlaceholderImg from "../assets/luffy.jpg"
 
 export default function Characters() {
     const [characters, setCharacters] = useState<any>([])
@@ -24,7 +24,7 @@ export default function Characters() {
         for (let i = 1; i <= 20; i++) {
             characters.push({
                 name: `Character ${i}`,
-                img: placeholderImg,
+                img: PlaceholderImg,
             })
         }
 
@@ -47,10 +47,9 @@ export default function Characters() {
     }
 
     return (
-        <div className='page'>
-            <h1 className='page-title'>Characters</h1>
+        <>
             <SearchField onChange={searchCharacters} />
             <ItemList items={filteredCharacters} isLoading={isLoading} />
-        </div>
+        </>
     )
 }

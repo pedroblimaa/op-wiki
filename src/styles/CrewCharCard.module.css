@@ -1,0 +1,66 @@
+.Card {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.Card .ImgCard {
+    width: 100px;
+    height: 100px;
+    border-radius: 5px;
+    border: 2px solid var(--color-light-dark);
+}
+
+.Card .CharCardContainer {
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-top-left-radius: 5px;
+    padding: 5px;
+    background-color: #151515;
+}
+
+.Card .AkumaNoMiCardContainer {
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    padding: 5px;
+    background-color: #2a2a2a;
+}
+
+.Card .Names {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    position: relative;
+}
+
+.Card .Names h3 {
+    width: calc(100% - 30px);
+    margin: 0;
+    font-weight: 400;
+    text-align: center;
+    font-size: .9rem;
+    padding: 10px;
+    color: #aaa;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.Card .Names h3:nth-child(1){
+    margin-right: 10px;
+    background-color: #151515;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.Card .Names h3:nth-child(2){
+    margin-left: 10px;
+    background-color: #2a2a2a;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+    position: absolute;
+    right: 0;  
+    bottom: 0;
+}

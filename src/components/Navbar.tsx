@@ -38,6 +38,11 @@ export default function Navbar() {
                                 Akuma No Mi
                             </li>
                         </Link>
+                        <Link to='/crew_builder'>
+                            <li onClick={toggleMenu}>
+                                Crew Builder
+                            </li>
+                        </Link>
                     </ul>
                 </menu>
             </nav>

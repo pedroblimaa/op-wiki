@@ -6,10 +6,14 @@ import SearchField from './SearchField'
 import '../styles/List.css'
 import placeholderImg from '../assets/akuma_no_mi.png'
 
-export default function AkumaNoMi() {
+export default function AkumaNoMi({isModal, selectAkumaNoMi}: any) {
     const [akumaNoMi, setAkumaNoMi] = useState<any>([])
     const [filteredAkumaNoMi, setFilteredAkumaNoMi] = useState<any>([])
     const [isLoading, setIsLoading] = useState(true)
+
+    const onClick = (item: any) => {
+        selectAkumaNoMi(item)
+    }
 
     useEffect(() => {
         const akumaNoMi = generateLoadingAkumaNoMi()
@@ -49,7 +53,7 @@ export default function AkumaNoMi() {
     return (
         <>
             <SearchField onChange={searchAkumaNoMi} />
-            <ItemList items={filteredAkumaNoMi} isLoading={isLoading} />
+            <ItemList items={filteredAkumaNoMi} isLoading={isLoading} isModal={isModal} onClick={onClick}/>
         </>
     )
 }

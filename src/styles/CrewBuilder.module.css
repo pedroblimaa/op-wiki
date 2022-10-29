@@ -1,3 +1,29 @@
-.CrewContent {
+.Header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
     margin-top: 10px;
+}
+
+.Header h1 {
+    margin-top: 0;
+}
+
+.CrewContent {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+.SaveBtn {
+    border: none;
+    color: #3A6289;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+    font-size: 1.3rem;
+    background-color: transparent;
+    padding: 10px;
+    position: absolute;
+    right: 15px;
 }

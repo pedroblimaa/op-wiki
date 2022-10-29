@@ -1,7 +1,6 @@
 import config from "../config/apiConfig";
 
 const url = config.baseUrl
-console.log(url)
 
 const getCharacters = async () => {
     let characters = await get('characters')

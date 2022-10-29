@@ -1,4 +1,6 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { faTrashAlt, faFloppyDisk } from '@fortawesome/free-regular-svg-icons'
 
 import Home from './pages/Home'
 import CharactersPage from './pages/CharactersPage'
@@ -6,6 +8,8 @@ import AkumaNoMiPage from './pages/AkumaNoMiPage'
 import Navbar from './components/Navbar'
 import Details from './pages/Details'
 import CrewBuilder from './pages/CrewBuilder'
+
+library.add(faTrashAlt, faFloppyDisk)
 
 function App() {
   return (

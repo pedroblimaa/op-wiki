@@ -6,10 +6,14 @@ import ItemList from "./ItemList"
 import SearchField from "./SearchField"
 import PlaceholderImg from "../assets/luffy.jpg"
 
-export default function Characters() {
+export default function Characters({isModal, selectChar}: any) {
     const [characters, setCharacters] = useState<any>([])
     const [filteredCharacters, setFilteredCharacters] = useState<any>([])
     const [isLoading, setIsLoading] = useState(true)
+
+    const onClick = (item: any) => {
+        selectChar(item)
+    }
 
     useEffect(() => {
         const characters = generateLoadingCharacters()
@@ -49,7 +53,7 @@ export default function Characters() {
     return (
         <>
             <SearchField onChange={searchCharacters} />
-            <ItemList items={filteredCharacters} isLoading={isLoading} />
+            <ItemList items={filteredCharacters} isLoading={isLoading} isModal={isModal} onClick={onClick}/>
         </>
     )
 }

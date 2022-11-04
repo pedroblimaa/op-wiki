@@ -41,7 +41,6 @@ export default function CrewBuilder() {
 
     const toggleModal = () => {
         setModal(!modal)
-        console.log(crewList)
     }
 
     const selectChar = (item: any) => {

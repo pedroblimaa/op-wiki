@@ -20,12 +20,10 @@ const getAkumaNoMi = async () => {
 
 const adjustCharacters = (characterList) => {
     return characterList.map(character => {
-        const id = character.name.replace(/\s/g, '_').toLowerCase()
         const image = character.img.split('.png')[0] + '.png'
 
         return {
             ...character,
-            id: id,
             img: image
         }
     })

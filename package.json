@@ -15,6 +15,8 @@
     "@types/react": "^18.0.21",
     "@types/react-dom": "^18.0.6",
     "cheerio": "^1.0.0-rc.12",
+    "dexie": "^3.2.2",
+    "dexie-react-hooks": "^1.1.1",
     "firebase": "^9.12.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
@@ -27,7 +29,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "debug": "react-scripts --inspect-brk start"
   },
   "eslintConfig": {
     "extends": [

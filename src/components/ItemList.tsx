@@ -15,7 +15,7 @@ export default function ItemList({ items, isLoading, isModal, onClick }: any) {
                 items.map((item: any) => (
                     <Link to='/details' onClick={event => isModal ? event.preventDefault() : ''} key={item.id ?? item.name} state={{ item: item }}>
                         <li className='item' onClick={() => handleClick(item)}>
-                            <img className={isLoading ? 'loading' : ''} src={item.img} alt={item.name} />
+                            <img className={isLoading ? 'loading' : ''} loading='lazy' src={item.img} alt={item.name} />
                             <h3>{item.name}</h3>
                         </li>
                     </Link>

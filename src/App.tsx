@@ -14,7 +14,6 @@ library.add(faTrashAlt, faFloppyDisk)
 function App() {
   return (
     <Router>
-      <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/characters" element={<CharactersPage />} />
@@ -22,6 +21,7 @@ function App() {
         <Route path="/details" element={<Details />} />
         <Route path="/crew_builder" element={<CrewBuilder />} />
       </Routes>
+      <Navbar />
     </Router>
   )
 }

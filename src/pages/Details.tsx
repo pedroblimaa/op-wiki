@@ -11,7 +11,7 @@ export default function Details() {
         <div className='page'>
             <h1 className={styles.Title}>{item.name}</h1>
             <div className={styles.Content}>
-                <img src={item.img} alt={item.name} />
+                <img src={item.img} alt={item.name} loading='lazy' />
                 <p>{item.description}</p>
             </div>
         </div>

@@ -20,7 +20,7 @@ export default function CrewCharCard({ crewChar, crewAkumaNoMi, onClick, deleteC
             <div className={styles.Card}>
                 <div className={styles.CharCardContainer} onClick={() => { toggleModal(true) }}>
                     {crewChar?.img
-                        ? <img className={`${styles.ImgCard} ${styles.Img} crew-card`} src={crewChar.img} alt={crewChar.name} />
+                        ? <img className={`${styles.ImgCard} ${styles.Img} crew-card`} loading='lazy' src={crewChar.img} alt={crewChar.name} />
                         : <div className={`${styles.ImgCard} ${styles.Empty} crew-card`}>
                             <PlusSign />
                         </div>
@@ -32,7 +32,7 @@ export default function CrewCharCard({ crewChar, crewAkumaNoMi, onClick, deleteC
                 </div>
                 <div className={styles.AkumaNoMiCardContainer} onClick={() => { toggleModal(false) }}>
                     {crewAkumaNoMi?.img
-                        ? <img className={`${styles.ImgCard} ${styles.Img} crew-card`} src={crewAkumaNoMi.img} alt={crewAkumaNoMi.name} />
+                        ? <img className={`${styles.ImgCard} ${styles.Img} crew-card`} loading='lazy' src={crewAkumaNoMi.img} alt={crewAkumaNoMi.name} />
                         : <div className={`${styles.ImgCard} ${styles.Empty} crew-card`}>
                             <PlusSign />
                         </div>

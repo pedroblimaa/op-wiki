@@ -28,6 +28,22 @@
     white-space: pre-wrap;
 }
 
+.ReturnBtn {
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+    font-size: 1.3rem;
+    background-color: transparent;
+    padding: 10px;
+    position: absolute;
+    left: 15px;
+}
+
+.ReturnBtn .ReturnIcon {
+    font-size: 1.5rem;
+}
+
 @media screen and (min-width: 800px) {
     .Content {
         flex-direction: row;

@@ -16,6 +16,21 @@
     margin-top: 20px;
 }
 
+@media screen and (min-width: 800px) {
+    .CrewContent {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-column-gap: 20px;
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    .CrewContent {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
 .SaveBtn {
     border: none;
     color: #3A6289;

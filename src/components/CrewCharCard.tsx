@@ -12,10 +12,11 @@ export default function CrewCharCard({ crewChar, crewAkumaNoMi, onClick, deleteC
     return (
         <div className={styles.CardContainer}>
 
-            {crewChar &&
-                <button className={styles.DeleteButton} onClick={deleteCard}>
+            {crewChar
+                ? <button className={styles.DeleteButton} onClick={deleteCard}>
                     <FontAwesomeIcon className={styles.TrashIcon} icon={['far', 'trash-alt']} />
                 </button>
+                : <div className={styles.SpaceDiv}></div>
             }
             <div className={styles.Card}>
                 <div className={styles.CharCardContainer} onClick={() => { toggleModal(true) }}>

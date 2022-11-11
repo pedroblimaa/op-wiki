@@ -5,6 +5,11 @@
     margin-left: auto;
     background-color: transparent;
     border: none;
+    height: 35px;
+}
+
+.SpaceDiv {
+    height: 35px;
 }
 
 .CardContainer .TrashIcon {
